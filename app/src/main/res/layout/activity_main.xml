@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/play1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Play With Picker Gallery"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:onClick="pick"
+        tools:ignore="OnClick" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play1"
+        android:layout_centerInParent="true"
+        android:id="@+id/link"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_url"
+            android:maxLines="1"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:selectAllOnFocus="true"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:hint="link example: http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+            android:text=""/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/play2"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/link"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:text="Play by link"
+        />
+
+</RelativeLayout>
